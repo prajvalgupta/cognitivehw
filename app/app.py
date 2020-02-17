@@ -17,7 +17,7 @@ async def get_bytes(url):
             return await response.read()
 
 
-learner = load_learner(".")
+learner = load_learner("app/")
 app = Starlette()
 
 
