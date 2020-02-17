@@ -7,8 +7,10 @@ ADD requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN python app.py
+COPY app app/
+
+RUN python app/app.py
 
 EXPOSE 8080
 
-CMD ["python", "app.py", "serve"]
+CMD ["python", "app/app.py", "serve"]
