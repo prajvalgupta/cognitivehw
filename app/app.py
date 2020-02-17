@@ -9,6 +9,7 @@ from io import BytesIO
 import sys
 import aiohttp
 import asyncio
+import uvicorn
 
 
 async def get_bytes(url):
